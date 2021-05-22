@@ -1,0 +1,42 @@
+.contenido{
+background: pink;
+width: 99vw;
+height: 97vh;
+}
+#encabezado {
+    background: green;
+    width: 99vw;
+    height: 15vh;
+}
+#slide {
+    background: aqua;
+    width: 99vw;
+    height: 71vh;
+
+    display:flex;
+    flex-direction: row;
+}
+.column.controlIzdo {
+    background: blue;
+    width: 6vw;
+}
+.column.Slide {
+    background: beige;
+    width: 87vw;
+}
+   .column.controlDer {
+    background: blue;
+    width: 6vw;
+}
+.Slide {
+	display: flex;
+	flex-direction: row;
+}
+.Titulos {
+    background: red;
+    width: 38vw;
+}
+.Col.Imagenes {
+    width: 49vw;
+    background: yellow;
+}
