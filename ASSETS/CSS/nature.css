@@ -1,27 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/* se obtiene la fuente desde el sitio web */
+@font-face {
+    font-family : Sigmar One;
+    src: url(../FONTS/Sigmar_One/SigmarOne-Regular.ttf);
+}
+*{
+    margin:0px;
+    padding:0px; 
+}
+/* se obtiene desde los repositorios locales del proyecto*/
 .contenido{
-background: pink;
-width: 99vw;
-height: 97vh;
+background-image: url(../IMAGEN/fondo.jpg);
+width: 100vw;
+height: 100vh;
 }
 #encabezado {
     background: green;
-    width: 99vw;
+    width: 100vw;
     height: 15vh;
 }
 #slide {
-    background: aqua;
-    width: 99vw;
+   
+    width: 100vw;
     height: 71vh;
 
     display:flex;
     flex-direction: row;
 }
 .column.controlIzdo {
-    background: blue;
     width: 6vw;
+    color: #fff;
+    font-size: 100px;
+    margin-top: 30vh;
 }
 .column.Slide {
-    background: beige;
+   
     width: 87vw;
 }
    .column.controlDer {
@@ -32,11 +45,42 @@ height: 97vh;
 	display: flex;
 	flex-direction: row;
 }
-.Titulos {
-    background: red;
+.Titulos { 
     width: 38vw;
+    display: flex;
+     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    color: #fff ;
+    
+}
+
+.Titulos h1 {
+    font-family: 'Sigmar One', cursive;
+    font-size: 42px;
+}
+.Titulos h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 32px;
 }
 .Col.Imagenes {
     width: 49vw;
-    background: yellow;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.Col.Imagenes  img {
+    width: 40vw;
+}
+.btnIngresar {
+    width: 25vw;
+    height: 13vh;
+    border-radius: 5vh;
+    background: violet;
 }
