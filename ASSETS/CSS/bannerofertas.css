@@ -1,0 +1,35 @@
+/*Banner Ofertas*/
+.bannerOfertas {
+	position relative;
+	overflow: hidden;
+	height: 260px;	
+	color:#fff;
+}
+.bannerOfertas .textoBanner{
+	position:absolute;
+	color: #fff;
+	margin-left: : 1vh;
+}
+
+.textoBanner.textoIzdo {
+    position: absolute;
+    top: 104vh;
+    color: #fff;
+    margin-left:  2vh;
+}
+
+.bannerOfertas h1 {
+    font-size: 2em;
+    line-height: 25px;
+    font-weight: bold;
+}
+.bannerOfertas h2 {
+    font-size: 1.7em;
+    line-height: 25px;
+    font-weight: bold;
+}
+.bannerOfertas h3 {
+    font-size: 1em;
+    line-height: 25px;
+    font-weight: bold;
+}

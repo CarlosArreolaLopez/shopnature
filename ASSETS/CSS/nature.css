@@ -1,86 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-/* se obtiene la fuente desde el sitio web */ 
+
 @font-face {
-    font-family : Sigmar One;
-    src: url(../FONTS/Sigmar_One/SigmarOne-Regular.ttf);
+  font-family: Luckiest Guy;
+  src: url(../fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf);
 }
 *{
-    margin:0px;
-    padding:0px; 
+  margin:0px;
+  padding:0px;
+  list-style: none;
+  text-decoration: none;
 }
-/* se obtiene desde los repositorios locales del proyecto*/
-.contenido{
-background-image: url(../IMAGEN/fondo.jpg);
-width: 100vw;
-height: 100vh;
+a:visited, a:link, a:focus, a:hover, a:active{
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
 }
-#encabezado {
-    background: green;
-    width: 100vw;
-    height: 15vh;
+ul, ol{
+  padding:0px;
 }
-#slide {
-   
-    width: 100vw;
-    height: 71vh;
+/* 0.- Contenido*/
 
-    display:flex;
-    flex-direction: row;
+ #contenido {
+  background: url("../imagen/fondo.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position-x: 47%;
+  background-position-y: 47%;
+  width: 100%;
+  height: 100vh;
 }
-.column.controlIzdo {
-    width: 6vw;
+
+/* 1.-Encabezado */
+
+#encabezado{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  color:#fff;
+  width:100%;
+  height: 5vh;
+}
+
+.logoEmpresa {
+  margin-left: 5vw;
+  margin-top: 5vh;
+  font-size: 3em;
+}
+.Menu {
+    margin-top: 2vw;
+    margin-right: 4vw;
+    font-size: 2em; 
+}
+
+.numproductos {
+    position: relative;
+    top: -8vh;
+    left: 2vw;
+    background: #6f42c1;
+    width: 2.5vw;
+    border-radius: 3vh;
+    height: 3.1vh;
+    text-align: center;
+    font-size: 11px;
+    padding: 0px;
     color: #fff;
-    font-size: 100px;
-    margin-top: 30vh;
+    font-weight: bolder;
 }
-.column.Slide {
-   
-    width: 87vw;
+
+.menuprincipal {
+    font-size: 35px;
 }
-   .column.controlDer {
-    background: blue;
-    width: 6vw;
+
+/*2.- Slide */
+
+#slide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  margin-top: 12vh;
+  height: 83vh;
+  color: #fff;
 }
+
 .Slide {
-	display: flex;
-	flex-direction: row;
+display: inline;
+width: 80vw;
 }
-.Titulos { 
-    width: 38vw;
+.Slide ul{
+  position: relative;
+  left:0%;
+  margin:auto;
+  height: auto;
+  width: 360vw;
+  clear:both;
+  display: table; 
+}
+.Slide ul li{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  float: left;
+  width: 90vw;
+}
+.sco1Der {
     display: flex;
-     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    width: 100vh;
+    padding-top: 4vh;
+    height: 75vh;
+}
+.sco1Der img {
+    width: 40vw;
+    height: 70vh;
+    margin-top: -20vh;
+}
+.sco1Izda {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+    height: 49vh;
+    padding-top: 5vh;
+}
+.controlIzq { 
+  z-index: 1;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-content: flex-start;
+    align-content: stretch;
     align-items: center;
-    color: #fff ;
-    
+    width: 5vw;
+    margin-left: 0vw;
+    font-size: 5em;
+    height: 83vh;
+    color: #cacaca;
 }
 
-.Titulos h1 {
-    font-family: 'Sigmar One', cursive;
-    font-size: 42px;
-}
-.Titulos h2 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 32px;
-}
-.Col.Imagenes {
-    width: 49vw;
-   
+.controlDer {
+    z-index: 1;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
+    align-content: stretch;
     align-items: center;
-    padding-top: 100px;
+     width: 5vw;
+    margin-left: 0vw;
+    font-size: 5em;
+    height: 83vh;
+    color: #cacaca;
 }
-.Col.Imagenes  img {
-    width: 40vw;
+
+.titulo1{
+  font-size:5em;
+  font-family: 'Luckiest Guy', cursive;}
+  .titulo2{
+  font-size:5em;
+  font-family: 'Luckiest Guy', cursive;}
+  .titulo3{
+  font-size:2em;
+  }
+  .btn-ingresar {
+    width: 32vw;
+    height: 9vh;
+    border-radius: 10vh;
+    background-color: darkviolet;
+    border-color: darkviolet;
+    font-size: 1.5em;
+    font-weight: bold;
 }
-.btnIngresar {
-    width: 25vw;
-    height: 13vh;
-    border-radius: 5vh;
-    background: violet;
+#SlidePaginacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+    width: 8vw;
+    margin-left: 83vh;
+    margin-top: -5vh;
+}
+.opcionitem {
+order: 0;
+flex: 0 1 auto;
+align-self: auto;
+text-shadow: 2px 2px 4px #000000;
+opacity: 0.5;
+}
+.activo{
+  opacity: 1;
+}
+/**/
+#productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: normal;
+  margin-top: 12vh;
+  height: 83vh;
+  background: #fff;
+  color: #000;
 }

@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="ASSETS/PLUGINS/fontawesome515/css/all.css">
-	<link rel="stylesheet" href="ASSETS/CSS/nature.css">
+<title>Shopping Nature</title>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link href="assets/plugins/fontawesome513/css/all.css" rel="stylesheet"> 
+<!-- Hojas de estilo personalizadas -->
+<link rel="stylesheet" href="assets/css/nature.css">
+<link rel="stylesheet" href="assets/css/bannerofertas.css">
 </head>
-<body>
-<div class="contenido">
-	<div id="encabezado"></div>
-	<div id="slide">
-		<div class="column controlIzdo"><i class="fas fa-chevron-left"></i>
-</div>
-		<div class="column Slide">
-			<div class="Col Titulos">
-				<h1>Manzanas frescas</h1>
-				<h1>100% natural</h1>
-				<h2>Sin conservadores</h2>
-				<h2>Sin qiimicos</h2>
-				<button class="btn btn-success btnIngresar">Ingresar</button>
+	<body>	
+		<div id="contenido">
+			<div id="encabezado">
+			<div class="logoEmpresa">ShopNature</div>
+			<div class="Menu"> 
+				<a href="#">
+					<i class="fas fa-shopping-cart"></i>
+					<div class="numproductos">99+</div>
+				</a>
 			</div>
-			<div class="Col Imagenes"><img src="ASSETS/IMAGEN/manzanas.png" alt=""></div>
+			</div>
+			<div id="slide">
+				<div class="column columna controlIzq">					
+						<i class="fas fa-chevron-left"></i>
+				</div>
+				<div class="column columna Slide">
+					<div id="Diapositivas">
+						<ul>
+							<li  diapositiva="0" >			
+								<div class="slideColOp1 sco1Izda">
+									<div class="titulo1">
+										<h1>BLACK CHERRY</h1>
+									</div>
+									<div class="titulo2">
+										<h2>DAIYA</h2>
+									</div>
+									<div class="titulo3">
+										<h3>Yogurt Alternativo</h3>
+									</div>
+									<div class="titulo3">
+										<h3>Hecho con crema de coco</h3>
+									</div>
+									<div class="ingresar">
+										<button class="btn btn-success btn-ingresar" producto="1">Ingresar</button>
+									</div>
+								</div>				
+								<div class="slideColOp1 sco1Der">
+									<img src="assets/imagen/producto0001.png" alt="">
+								</div>	
+							</li>							
+						</ul>
+					</div>				
+				</div>
+				<div class="column columna controlDer">					
+						<i class="fas fa-chevron-right"></i>				
+				</div>
+			</div>					
 		</div>
-		<div class="column controlDer">></div>
-	</div>
-	<div id="piepagina"></div>
-</div>	
-</body>
+		<script src="assets/plugins/jquery/jquery-3.6.0.min.js"></script> 
+		<script defer src="assets/plugins/fontawesome513/js/all.js"></script>
+	</body>
 </html>
